@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <header>
+<h1>Trabajando con Formularios</h1>
+    </header>
+<main>
+<form action="https://formspree.io/f/mjkvkyyw" method="post"></form>
+
+<fieldset>
+<legend>
+    <h2>Registro de Usuario - Ingrese sus datos</h2>
+</legend>
+
+<p>
+<label for="name">Nombre/s</label>
+<input type="text" name="name" id="name" required>
+</p>
+
+<p>
+    <label for="surname">Apellido/s</label>
+    <input type="text" name="surname" id="surname" required>
+</p>
+
+<p>
+    <label for="dni">DNI</label>
+    <input type="text" name="dni" id="dni" required maxlength="8">
+</p>
+
+<p>
+    <label for="email">Correo Electronico</label>
+    <input type="text" name="email" id="email" placeholder="Usuario@email.com" required pattern="/^(([^<>()\[\]\\.,;:\s@”]+(\.[^<>()\[\]\\.,;:\s@”]+)*)|(“.+”))@((\[[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}])|(([a-zA-Z\-0–9]+\.)+[a-zA-Z]{2,}))$/">
+</p>
+
+<p>
+    <label for="zipcode">Codigo Postal</label>
+    <input type="text" name="zipcode" id="zipcode" placeholder="B1234CDY">
+</p>
+
+<p>
+    <label for="date">Fecha de Nacimiento</label>
+    <input type="date" name="date" id="date">
+</p>
+
+<p>
+    <label for="cellphone">Telefono</label>
+    <input type="text" id="cellphone" name="cellphone" maxlength="11" minlength="8" placeholder="11-1730-1234">
+</p>
+
+<p>
+<label for="direccion">Direccion</label>
+<input type="text" id="direccion" name="direccion" required>
+</p>
+<p>
+    <label for="nivel">Nivel de Estudio</label>
+    <input type="radio" name="nivel" id="1">Primario
+    <input type="radio" name="nivel" id="2">Secundario
+    <input type="radio" name="nivel" id="3">Universitario
+</p>
+<p>
+    <label for="ocupacion">Ocupacion</label>
+        <select name="ocupacion" id="ocupacion">
+            <option value=""></option>
+        <option value="1">Bajo Relacion de Dependencia</option>
+        <option value="2">Desempleado</option>
+<option value="3">Estudiante</option>
+<option value="4">Autonomo</option>
+<option value="5">Pasante</option>
+    </select>
+</p>
+<p>
+    <label for="pass">Contraseña</label>
+    <input type="password" id="pass" name="pass">
+</p>
+
+<p>
+    <label for="conocimiento">Conocimiento</label>
+    <input type="checkbox" name="JS" id="1" value="conocimiento">JS
+    <input type="checkbox" name="HTML" id="2" value="conocimiento">HTML
+    <input type="checkbox" name="CSS" id="3" value="conocimiento">CSS
+</p>
+
+<p>
+<label for="descripcion">Descripcion</label>
+<textarea name="descripcion" id="descripcion" cols="30" rows="10"></textarea>
+</p>
+<p>
+<label for="foto">Foto de Perfil</label>
+<input type="file" id="foto" name="foto">
+</p>
+
+
+<p><input type="submit"></p>
+<p><input type="reset"></p>
+</fieldset>
+
+</main>
+<footer>
+
+</footer>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 2</title>
+</head>
+<body>
+    <header>
+        <h1>Trabajando con Formularios</h1>
+    </header>
+    <main>
+
+<form action="#" method="post"></form>
+
+        
+        
+<fieldset>
+<legend>
+    <h2>
+        Registro de Usuario - Ingrese sus Datos
+    </h2>
+</legend>
+    <p>
+        <label for="Name">Nombre/s</label>
+    <input type="text" name="Name" id="Name" required >
+    </p>
+    
+    <p>
+        <label for="Surname">Apellido/s</label>
+        <input type="text" name="Surname" id="Surname" required >
+        </p>
+        <p>
+            <label for="ID">DNI</label>
+        <input type="text" name="ID" id="ID" required minlength="9" maxlength="9">
+        </p>
+        <p>
+            <label for="email">Correo Electronico</label>
+            <input type="text" name="email" id="email" placeholder="usuario@email.com" required pattern="/^(([^<>()\[\]\\.,;:\s@”]+(\.[^<>()\[\]\\.,;:\s@”]+)*)|(“.+”))@((\[[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}])|(([a-zA-Z\-0–9]+\.)+[a-zA-Z]{2,}))$/">
+        </p>
+        <p>
+<label for="postcode">Codigo Postal</label>
+<input type="text" name="postcode" id="postcode" required maxlength="8" minlength="4" placeholder="X1234ABC">
+        </p>
+        <p>
+            <label for="date">Fecha de Nacimiento</label>
+            <input type="date" name="date" id="date">
+        </p>
+        <p>
+<label for="cellphone">Telefono</label>
+<input type="text" name="cellphone" id="cellphone" maxlength="10" placeholder="11-321-6789">
+        </p>
+        <p>
+            <label for="direccion">Direccion</label>
+            <input type="text" name="direccion" id="direccion" required >
+        </p>
+        <p>
+            <label for="nivel">Nivel de Estudio</label>
+            <input type="radio" name="mivel" id="1">Primario
+            <input type="radio" name="mivel" id="2">Secundario
+            <input type="radio" name="mivel" id="3">Universitario
+        </p>
+        <p>
+            <label for="ocupacion">Ocupacion</label>
+            <select name="ocupacion" id="ocupacion" required>
+                <option value="0"></option>
+                <option value="1">Autonomo</option>
+                <option value="2">Bajo relacion de Dependencia</option>
+                <option value="3">Estudiante</option>
+                <option value="4">Pasante</option>
+                <option value="5">Desempleado</option>
+            </select>
+        </p>
+<p>
+    <label for="password">Contraseña</label>
+    <input type="password" name="password" id="password">
+</p>
+<p>
+    <label for="conocimiento">Conocimiento</label>
+<input type="checkbox" id="1" name="js" value="conocimiento">JS
+<input type="checkbox" id="2" name="html" value="conocimiento">HTML
+<input type="checkbox" id="3" name="css" value="conocimiento">CSS
+    </section>
+</p>
+
+<p>
+<label for="descripcion">Descripcion</label>
+<textarea name="descripcion" id="descripcion" cols="30" rows="10"></textarea>
+</p>
+
+<p>
+    <label for="imagen">Foto de Perfil</label>
+    <input type="file" name="imagen" id="imagen">
+</p>
+
+
+        <p><input type="submit"></p>
+<p><input type="reset"></p>
+
+</fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
